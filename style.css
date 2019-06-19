@@ -41,6 +41,9 @@ header{
     z-index: -200;
 }
 
+.americanvillageimg-sp {
+    display: none;
+}
 
 .text{
 
@@ -69,7 +72,8 @@ main{
         display:flex;
         justify-content: center;
         margin-top:-10px;
-        position: none;
+        position: static;
+        margin-bottom: 20px;
     }
 
     .logoimg{
@@ -81,31 +85,53 @@ main{
         display:none;
     }
     .americanvillageimg{
-        width:100%;
-        margin-top:250px;
+        display: none;
     }
+
+    .americanvillageimg-sp {
+        width:100%;
+        display: block;
+    }
+
     .americanvillage{
-        margin-left:0;
-        width:100%;
-        margin:0;
+      width:100%;
+      margin:0;
+      position: relative;
     }
+
+    .text {
+      margin: 0;
+    }
+
     .textsp{
-         display:block;
-         width:100px;
-         /* margin-top: -170px; */
+      display:block;
+      width:50%;
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
+
     .textpc{
       display:none;
     }
-    .container{  width:100%;
+    .container{ 
+        width:100%;
     }
 
     .phrase{
-        display:static;
-        text-align:center;
+      text-align:center;
+      font-size:32px;
+      width:100%;
+      height:80px;
+      margin: 0;
+    }
+
+    .phrase span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
         font-size:32px;
-        width:410px;
-        height:80px;
     }
 }
 
